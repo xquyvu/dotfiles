@@ -13,3 +13,10 @@ defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandle
 # defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType="public.folder";LSHandlerRoleAll="com.apple.finder";}'
 
 # If you set Nimble Commander as the default file viewer and you remove it from your system, Finder will automatically become the default one.
+
+###############################################################################
+# VSCode                                                                      #
+###############################################################################
+
+# Set the default text editor to VSCode
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.microsoft.VSCode;}'

@@ -1,0 +1,24 @@
+# Install pyenv
+brew install pyenv
+
+# Base packages for python
+brew install openssl readline sqlite3 xz zlib
+
+# Install python
+pyenv install 3.10
+
+# Set global
+pyenv global 3.10
+
+# Install virtualenv
+brew install pyenv-virtualenv
+
+# Everything env
+pyenv virtualenv everything
+
+# Configure zshrc to work with pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> .zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> .zshrc
+echo 'eval "$(pyenv init --path)"' >> .zshrc
+echo 'eval "$(pyenv virtualenv-init -)"' >> .zshrc
+echo 'eval "$(pyenv init -)"' >> .zshrc
