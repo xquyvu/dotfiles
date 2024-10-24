@@ -34,3 +34,8 @@
 - Rearrange the icons on the menu bar
 - Use the full menu bar when expanding
 - Untick show preferences on launch
+
+## Shortcat
+
+- Set to start on login
+- Hotkey: Option + Space
