@@ -8,6 +8,7 @@ For the next time I need to set up my Mac: Steal from this instead: <https://git
 - Make the bootstrap.sh file work.
 - Add suggestion / workflow to run the bash scrips (e.g., configure_apps.sh)
 - Configure a way to dismiss notifications with keyboard shortcut
+- Syncing all the config back to this repo when it's time to backup configs from the current computer
 
 ## Installation
 

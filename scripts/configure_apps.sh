@@ -57,7 +57,4 @@ open "$app_configs_dir/macros.keysmith"
 defaults write com.lamquangminh.evkey AutoStart -int 1
 defaults write com.lamquangminh.evkey NSound -int 0
 defaults write com.lamquangminh.evkey SGui -int 0
-
-###############################################################################
-# Notion                                                                      #
-###############################################################################
+defaults write com.lamquangminh.evkey ForceEx -int 1 # Prevent letters for disappearing when adding punctuation in certain apps
