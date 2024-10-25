@@ -58,3 +58,14 @@ defaults write com.lamquangminh.evkey AutoStart -int 1
 defaults write com.lamquangminh.evkey NSound -int 0
 defaults write com.lamquangminh.evkey SGui -int 0
 defaults write com.lamquangminh.evkey ForceEx -int 1 # Prevent letters for disappearing when adding punctuation in certain apps
+
+###############################################################################
+# Alt Tab                                                                     #
+###############################################################################
+
+defaults write com.lwouis.alt-tab-macos hideStatusIcons -bool true
+defaults write com.lwouis.alt-tab-macos hideSpaceNumberLabels -bool true
+defaults write com.lwouis.alt-tab-macos hideWindowlessApps -bool true
+defaults write com.lwouis.alt-tab-macos previewFocusedWindow -bool false
+defaults write com.lwouis.alt-tab-macos windowDisplayDelay -int 0
+defaults write com.lwouis.alt-tab-macos showOnScreen -int 2 # Including menu bar

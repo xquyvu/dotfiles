@@ -5,17 +5,6 @@
 - Go to Settings > Spotlight, set "Show spotlight search to Option + Space
 - Go to Alfred, change Alfred hotkey to Command + Space
 
-## Alt Tab
-
-- Appearance
-  - Customize thumbnails style
-    - Hide status icon
-    - Hide space number label
-    - Hide apps with no open window
-    - Preview selected window
-  - Animations ...
-    - Apparition delay: 0ms
-
 ## Keysmith
 
 - Unbind every keyboard shortcut
