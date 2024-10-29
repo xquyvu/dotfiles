@@ -43,6 +43,7 @@ brew install --cask logi-options+
 brew install pyenv
 brew install pyenv-virtualenv
 brew install openssl readline xz
+brew install uv
 
 pyenv install 3.11 3.12 3.13
 pyenv global 3.11
