@@ -123,6 +123,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
+# Enable Capslock again (Stupid Mac!)
+hidutil property --set '{"CapsLockDelayOverride":0}'
+
 # Scroll up goes up, scroll down goes down! (Disable natural scrolling)
 defaults write -g com.apple.swipescrolldirection -bool NO
 
