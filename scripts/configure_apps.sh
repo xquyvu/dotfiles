@@ -12,16 +12,17 @@ cp .gitconfig ~/.gitconfig
 # File explorer                                                               #
 ###############################################################################
 # Setting Nimble Commander as default file viewer
+# Either info.filesmanager.Files or info.filesmanager.Files-Lite
+# # Then restart your Mac. The second command is required in order to open folders in Nimble Commander by pressing Enter in Alfred.
 
-defaults write -g NSFileViewer -string info.filesmanager.Files-Lite;
-defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType="public.folder";LSHandlerRoleAll="info.filesmanager.Files-Lite";}'
+defaults write -g NSFileViewer -string info.filesmanager.Files;
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType="public.folder";LSHandlerRoleAll="info.filesmanager.Files";}'
 
-# Then restart your Mac. The second command is required in order to open folders in ForkLift by pressing Enter in Alfred.
+cp "$app_configs_dir/NimbleCommanderConfig.json" "/Users/quyvu/Library/Application Support/Nimble Commander/Config/Config.json"
 
 # To change it back to Finder, use the following command then restart your Mac:
 # defaults delete -g NSFileViewer
 # defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType="public.folder";LSHandlerRoleAll="com.apple.finder";}'
-
 # If you set Nimble Commander as the default file viewer and you remove it from your system, Finder will automatically become the default one.
 
 ###############################################################################

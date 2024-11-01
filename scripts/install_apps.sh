@@ -35,6 +35,7 @@ brew install --no-quarantine --cask th-ch/youtube-music/youtube-music
 brew install --no-quarantine --cask evkey
 brew install --no-quarantine --cask hiddenbar
 brew install --cask displaylink
+brew install nimble-commander
 
 # Optional apps
 brew install --cask logi-options+
