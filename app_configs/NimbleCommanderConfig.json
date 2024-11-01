@@ -732,5 +732,10 @@
                 "viewerTextColor": "#DBD1DC"
             }
         ]
+    },
+    "hotkeyOverrides_v1": {
+        "menu.go.enclosing_folder": "⌥",
+        "menu.go.right_panel": "",
+        "menu.command.rename_in_place": ""
     }
 }
