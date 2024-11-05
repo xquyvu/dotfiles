@@ -123,9 +123,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
-# Enable Capslock again (Stupid Mac!)
-hidutil property --set '{"CapsLockDelayOverride":0}'
-
 # Scroll up goes up, scroll down goes down! (Disable natural scrolling)
 defaults write -g com.apple.swipescrolldirection -bool NO
 
@@ -558,6 +555,17 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # Set VSCode as the default app for all text files
 duti -s com.microsoft.VSCode public.plain-text all
 duti -s com.microsoft.VSCode public.data all
+
+###############################################################################
+# plists
+###############################################################################
+
+plist_folder="plists"
+
+for plist_file in $(ls $plist_folder); do
+  	sudo cp $plist_folder/$plist_file /Library/LaunchDaemons
+	sudo launchctl load /Library/LaunchDaemons/$plist_file
+done
 
 ###############################################################################
 # Kill affected applications                                                  #
