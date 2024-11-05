@@ -17,5 +17,7 @@
     <string>/tmp/hidutil.log</string>
     <key>StandardErrorPath</key>
     <string>/tmp/hidutil.log</string>
+    <key>Description</key>
+    <string>Remove capslock delay</string>
 </dict>
 </plist>
