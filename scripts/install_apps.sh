@@ -36,6 +36,7 @@ brew install --no-quarantine --cask evkey
 brew install --no-quarantine --cask hiddenbar
 brew install --cask displaylink
 brew install nimble-commander
+brew install bluesnooze
 
 # Optional apps
 brew install --cask logi-options+
